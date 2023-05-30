@@ -12,8 +12,8 @@ import { CippActionsOffcanvas } from 'src/components/utilities'
 const Offcanvas = (row, rowIndex, formatExtraData) => {
   const tenant = useSelector((state) => state.app.currentTenant)
   const [ocVisible, setOCVisible] = useState(false)
-  const viewLink = `/identity/administration/msausers/view?userId=${row.id}&tenantDomain=${tenant.defaultDomainName}&userEmail=${row.userPrincipalName}`
-  const editLink = `/identity/administration/msausers/edit?userId=${row.id}&tenantDomain=${tenant.defaultDomainName}`
+  const viewLink = `/identity/administration/users/view?userId=${row.id}&tenantDomain=${tenant.defaultDomainName}&userEmail=${row.userPrincipalName}`
+  const editLink = `/identity/administration/users/edit?userId=${row.id}&tenantDomain=${tenant.defaultDomainName}`
   //console.log(row)
   return (
     <>
