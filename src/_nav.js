@@ -47,6 +47,11 @@ const _nav = [
       },
       {
         component: CNavItem,
+        name: 'MSA Users',
+        to: '/identity/administration/msausers',
+      },
+      {
+        component: CNavItem,
         name: 'Groups',
         to: '/identity/administration/groups',
       },
