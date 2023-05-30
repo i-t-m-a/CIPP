@@ -8,6 +8,8 @@ import { cellBooleanFormatter, CellTip } from 'src/components/tables'
 import { CippPageList } from 'src/components/layout'
 import { TitleButton } from 'src/components/buttons'
 import { CippActionsOffcanvas } from 'src/components/utilities'
+ 
+// testing pull request
 
 const Offcanvas = (row, rowIndex, formatExtraData) => {
   const tenant = useSelector((state) => state.app.currentTenant)
@@ -287,7 +289,7 @@ const Users = (row) => {
     <CippPageList
       capabilities={{ allTenants: true, helpContext: 'https://google.com' }}
       title="Users"
-      titleButton={titleButtons}
+      //titleButton={titleButtons}
       datatable={{
         filterlist: [
           { filterName: 'Enabled users', filter: '"accountEnabled":true' },
