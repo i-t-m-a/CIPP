@@ -8,7 +8,6 @@ import { cellBooleanFormatter, CellTip } from 'src/components/tables'
 import { CippPageList } from 'src/components/layout'
 import { TitleButton } from 'src/components/buttons'
 import { CippActionsOffcanvas } from 'src/components/utilities'
- 
 // testing pull request
 
 const Offcanvas = (row, rowIndex, formatExtraData) => {
