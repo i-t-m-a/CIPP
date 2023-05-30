@@ -31,6 +31,7 @@ const Page403 = React.lazy(() => import('src/views/pages/page403/Page403'))
 const Page500 = React.lazy(() => import('src/views/pages/page500/Page500'))
 
 const MFAReport = React.lazy(() => import('src/views/identity/reports/MFAReport'))
+const MSAUsersReport = React.lazy(() => import('src/views/identity/reports/MSAUsersReport'))
 const Tenants = React.lazy(() => import('src/views/tenant/administration/Tenants'))
 const AlertWizard = React.lazy(() => import('src/views/tenant/administration/AlertWizard'))
 const AlertsQueue = React.lazy(() => import('src/views/tenant/administration/ListAlertsQueue'))
@@ -276,6 +277,7 @@ const routes = [
   { path: '/identity/reports', name: 'Reports' },
   { path: '/endpoint/reports/devices', name: 'Devices', component: Devices },
   { path: '/identity/reports/mfa-report', name: 'MFA Report', component: MFAReport },
+  { path: '/identity/reports/msausers', name: 'MSA Users Report', component: MSAUsersReport },
   {
     path: '/identity/reports/inactive-users-report',
     name: 'Inactive Users Report',

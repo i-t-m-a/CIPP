@@ -47,11 +47,6 @@ const _nav = [
       },
       {
         component: CNavItem,
-        name: 'MSA Users',
-        to: '/identity/administration/msausers',
-      },
-      {
-        component: CNavItem,
         name: 'Groups',
         to: '/identity/administration/groups',
       },
@@ -93,6 +88,11 @@ const _nav = [
         component: CNavItem,
         name: 'MFA Report',
         to: '/identity/reports/mfa-report',
+      },
+      {
+        component: CNavItem,
+        name: 'MSA Users Report',
+        to: '/identity/reports/msausers',
       },
       {
         component: CNavItem,
