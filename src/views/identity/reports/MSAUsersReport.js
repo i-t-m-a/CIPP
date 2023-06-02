@@ -45,6 +45,7 @@ const Offcanvas = (row, rowIndex, formatExtraData) => {
           { label: 'City', value: `${row.city ?? ' '}` },
           { label: 'Department', value: `${row.department ?? ' '}` },
           { label: 'OnPrem Last Sync', value: `${row.onPremisesLastSyncDateTime ?? ' '}` },
+          { label: 'On Prem OU', value: `${row.onpremisesdistinguishedname ?? ' '}` },
           { label: 'Unique ID', value: `${row.id ?? ' '}` },
         ]}
         actions={[
@@ -304,7 +305,7 @@ const Users = (row) => {
           },
         ],
         columns,
-        path: '/api/ListUsers',
+        path: '/api/ListUsersMSA',
         reportName: `${tenant?.defaultDomainName}-Users`,
         params: { TenantFilter: tenant?.defaultDomainName },
         tableProps: {
