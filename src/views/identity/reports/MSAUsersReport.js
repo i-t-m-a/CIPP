@@ -6,7 +6,7 @@ import { faEdit, faEllipsisV, faEye, faobjectexclude } from '@fortawesome/free-s
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { cellBooleanFormatter, CellTip } from 'src/components/tables'
 import { CippPageList } from 'src/components/layout'
-import { TitleButton } from 'src/components/buttons'
+//import { TitleButton } from 'src/components/buttons'
 import { CippActionsOffcanvas } from 'src/components/utilities'
 
 const Offcanvas = (row, rowIndex, formatExtraData) => {
@@ -55,7 +55,7 @@ const Offcanvas = (row, rowIndex, formatExtraData) => {
             link: editLink,
             color: 'danger',
             modal: true,
-            modalUrl: `/api/ExecCreateTAP?TenantFilter=${tenant.defaultDomainName}&ID=${row.userPrincipalName}`,
+            modalUrl: ``,
             modalMessage: 'Are you sure you want to create a Temporary Access Pass?',
           },
         ]}
@@ -148,7 +148,7 @@ const Users = (row) => {
     <CippPageList
       capabilities={{ allTenants: true, helpContext: 'https://google.com' }}
       title="Users"
-      titleButton={titleButtons}
+      //titleButton={titleButtons}
       datatable={{
         filterlist: [
           { filterName: 'Enabled users', filter: '"accountEnabled":true' },
