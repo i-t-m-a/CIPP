@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { CButton } from '@coreui/react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { faEdit, faEllipsisV, faEye, faobjectexclude } from '@fortawesome/free-solid-svg-icons'
+import { faEdit, faEllipsisV, faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { cellBooleanFormatter, CellTip } from 'src/components/tables'
 import { CippPageList } from 'src/components/layout'
@@ -50,7 +50,7 @@ const Offcanvas = (row, rowIndex, formatExtraData) => {
             color: 'success',
           },
           {
-            icon: <FontAwesomeIcon icon={faobjectexclude} className="me-2" />,
+            icon: <FontAwesomeIcon icon={faEdit} className="me-2" />,
             label: 'Exclude From MSA Report',
             link: editLink,
             color: 'danger',
