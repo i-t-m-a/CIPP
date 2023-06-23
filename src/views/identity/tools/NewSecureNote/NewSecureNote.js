@@ -23,20 +23,16 @@ import {
   RFFSelectSearch,
 } from 'src/components/forms'
 import { CippPage } from 'src/components/layout'
-import countryList from 'src/data/countryList'
 import { useLazyGenericPostRequestQuery } from 'src/store/api/app'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux'
-import { required } from 'src/validators'
-import Select from 'react-select'
-import { useNavigate } from 'react-router-dom'
 
 const NewSecureNote = () => {
-  let navigate = useNavigate()
-
   const [genericPostRequest, postResults] = useLazyGenericPostRequestQuery()
   const onSubmit = (values) => {
+
+    
     const shippedValues = {
       Title: values.title ,
       Hint: values.hint,
@@ -76,6 +72,7 @@ const NewSecureNote = () => {
                 render={({ handleSubmit, submitting, values }) => {
                   return (
                     <CForm onSubmit={handleSubmit}>
+
                       <CRow>
                         <CCol md={6}>
                           <RFFCFormInput type="text" name="title" label="Note Title" />
@@ -85,13 +82,13 @@ const NewSecureNote = () => {
                         </CCol>
                       </CRow>
                       <CRow>
-                      <CCol md={6}>
-                          <RFFCFormInput type="text" name="password" label="One-Time Code" />
+                        <CCol md={6}>
+                            <RFFCFormInput type="text" name="password" label="One-Time Code" />
                         </CCol>
                         <CCol md={6}>
-                          <RFFCFormInput type="text" name="recipient" label="Recipient (optional)" />
+                            <RFFCFormInput type="text" name="recipient" label="Recipient (optional)" />
                         </CCol>
-                      </CRow>   
+                      </CRow> 
                       <CRow>
                         <CCol md={12}>
                           <RFFCFormTextarea
