@@ -13,5 +13,5 @@
   },
   "extends": ["plugin:prettier/recommended"],
   "plugins": ["react-hooks"],
-  "rules": {"prettier/prettier": ["error", {"endOfLine": "auto"}]}
+  "rules": {}
 }
