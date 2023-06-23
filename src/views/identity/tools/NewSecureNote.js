@@ -53,15 +53,7 @@ const NewSecureNote = () => {
     usageLocation: usagelocation,
     ...allQueryObj,
   }
-  const copyUserVariables = (t) => {
-    for (const [key, value] of Object.entries(t.value)) {
-      query.delete(key)
-      if (value != null) {
-        query.append(key, value)
-      }
-      navigate(`?${query.toString()}`)
-    }
-  }
+
   return (
     <CippPage title="Create Secure Note">
       {postResults.isSuccess && (
@@ -110,11 +102,10 @@ const NewSecureNote = () => {
                           />
                         </CCol>
                       </CRow>
-
                       <CRow className="mb-3">
                         <CCol md={6}>
                           <CButton type="submit" disabled={submitting}>
-                            Add User
+                            Create Note
                             {postResults.isFetching && (
                               <FontAwesomeIcon
                                 icon={faCircleNotch}
