@@ -112,6 +112,20 @@ const _nav = [
     ],
   },
   {
+    component: CNavGroup,
+    name: 'Tools',
+    section: 'Identity Management',
+    to: '/identity/tools',
+    icon: <FontAwesomeIcon icon={faChartBar} className="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Create Secure Note',
+        to: '/identity/tools/newsecurenote',
+      },
+    ],
+  },
+  {
     component: CNavTitle,
     name: 'Tenant Administration',
   },
