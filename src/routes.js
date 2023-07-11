@@ -37,8 +37,6 @@ const AlertWizard = React.lazy(() => import('src/views/tenant/administration/Ale
 const AlertsQueue = React.lazy(() => import('src/views/tenant/administration/ListAlertsQueue'))
 const GraphExplorer = React.lazy(() => import('src/views/tenant/administration/GraphExplorer'))
 
-const NoteShred = React.lazy(() => import('src/views/identity/tools/NewSecureNote'))
-
 const Domains = React.lazy(() => import('src/views/tenant/administration/Domains'))
 const EditTenant = React.lazy(() => import('src/views/tenant/administration/EditTenant'))
 const ConditionalAccess = React.lazy(() => import('src/views/tenant/conditional/ConditionalAccess'))
@@ -280,7 +278,6 @@ const routes = [
   { path: '/endpoint/reports/devices', name: 'Devices', component: Devices },
   { path: '/identity/reports/mfa-report', name: 'MFA Report', component: MFAReport },
   { path: '/identity/reports/msausers', name: 'MSA Users Report', component: MSAUsersReport },
-  { path: '/identity/tools/newsecurenote', name: 'MSA Users Report', component: NoteShred },
   {
     path: '/identity/reports/inactive-users-report',
     name: 'Inactive Users Report',
