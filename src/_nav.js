@@ -132,11 +132,15 @@ const _nav = [
         name: 'Alerts Wizard',
         to: '/tenant/administration/alertswizard',
       },
-
       {
         component: CNavItem,
         name: 'Scheduled Alerts',
         to: '/tenant/administration/alertsqueue',
+      },
+      {
+        component: CNavItem,
+        name: 'Enterprise Applications',
+        to: '/tenant/administration/enterprise-apps',
       },
     ],
   },
@@ -183,7 +187,7 @@ const _nav = [
       },
       {
         component: CNavItem,
-        name: 'Apply Standards',
+        name: 'Standards Wizard',
         to: '/tenant/standards/apply-standard',
       },
       {
