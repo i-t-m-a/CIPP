@@ -700,6 +700,11 @@ const _nav = [
       },
       {
         component: CNavItem,
+        name: 'Invite Wizard',
+        to: '/tenant/administration/gdap-invite',
+      },
+      {
+        component: CNavItem,
         name: 'GDAP Relationships',
         to: '/tenant/administration/gdap-relationships',
       },
