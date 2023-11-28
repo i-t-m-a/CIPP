@@ -227,6 +227,9 @@ const ServiceHealth = React.lazy(() => import('src/views/tenant/administration/S
 const EnterpriseApplications = React.lazy(() =>
   import('src/views/tenant/administration/ListEnterpriseApps'),
 )
+const AppConsentRequests = React.lazy(() =>
+  import('src/views/tenant/administration/ListAppConsentRequests'),
+)
 const MailboxRestoreWizard = React.lazy(() =>
   import('src/views/email-exchange/tools/MailboxRestoreWizard'),
 )
@@ -325,6 +328,11 @@ const routes = [
     path: '/tenant/administration/enterprise-apps',
     name: 'Enterprise Applications',
     component: EnterpriseApplications,
+  },
+  {
+    path: '/tenant/administration/app-consent-requests',
+    name: 'App Consent Requests',
+    component: AppConsentRequests,
   },
   {
     path: '/tenant/conditional/list-policies',
