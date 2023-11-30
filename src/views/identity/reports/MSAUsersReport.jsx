@@ -56,7 +56,7 @@ const Offcanvas = (row, rowIndex, formatExtraData) => {
             color: 'danger',
             modal: true,
             modalUrl: ``,
-            modalMessage: 'Are you sure you want to create a Temporary Access Pass?',
+            modalMessage: 'Are you sure you want to exclude the selected users?',
           },
         ]}
         placement="end"
@@ -175,7 +175,7 @@ const Users = (row) => {
               label: 'Exclude From MSA Report',
               color: 'danger',
               modal: true,
-              modalUrl: `/api/`,
+              modalUrl: `/api/ExcludeMSAUsers`,
               modalMessage: 'Are you sure you want to exclude the selected users?',
             },
           ],
