@@ -14,6 +14,7 @@ const Offcanvas = (row, rowIndex, formatExtraData) => {
   const [ocVisible, setOCVisible] = useState(false)
   const viewLink = `/identity/administration/users/view?userId=${row.id}&tenantDomain=${tenant.defaultDomainName}&userEmail=${row.userPrincipalName}`
   const editLink = `/identity/administration/users/edit?userId=${row.id}&tenantDomain=${tenant.defaultDomainName}`
+  const msaExclude = `/identity/reports/MSAUserReport`
   //console.log(row)
   return (
     <>
@@ -52,10 +53,10 @@ const Offcanvas = (row, rowIndex, formatExtraData) => {
           {
             icon: <FontAwesomeIcon icon={faEdit} className="me-2" />,
             label: 'Exclude From MSA Report',
-            link: editLink,
+            link: msaExclude,
             color: 'danger',
             modal: true,
-            modalUrl: ``,
+            modalUrl: `/api/ExcludeMSAUsers`,
             modalMessage: 'Are you sure you want to exclude the selected users?',
           },
         ]}
