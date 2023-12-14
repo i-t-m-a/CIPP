@@ -59,6 +59,10 @@
       "allowedRoles": ["admin"]
     },
     {
+      "route": "/api/ExcludeMSAUsers",
+      "allowedRoles":  ["admin", "editor", "readonly"]
+    },
+    {
       "route": "/api/Exec*",
       "allowedRoles": ["admin", "editor"]
     },
