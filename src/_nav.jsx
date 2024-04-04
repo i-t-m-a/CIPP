@@ -486,8 +486,18 @@ const _nav = [
       },
       {
         component: CNavItem,
-        name: 'MEM Policies',
+        name: 'Configuration Policies',
         to: '/endpoint/MEM/list-policies',
+      },
+      {
+        component: CNavItem,
+        name: 'Compliance Policies',
+        to: '/endpoint/MEM/list-compliance-policies',
+      },
+      {
+        component: CNavItem,
+        name: 'Protection Policies',
+        to: '/endpoint/MEM/list-appprotection-policies',
       },
       {
         component: CNavItem,
@@ -616,6 +626,11 @@ const _nav = [
         component: CNavItem,
         name: 'Mailbox Restores',
         to: '/email/tools/mailbox-restores',
+      },
+      {
+        component: CNavItem,
+        name: 'Mail Test',
+        to: '/email/tools/mail-test',
       },
     ],
   },
