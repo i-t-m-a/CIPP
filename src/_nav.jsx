@@ -149,6 +149,11 @@ const _nav = [
       },
       {
         component: CNavItem,
+        name: 'Secure Score',
+        to: '/tenant/administration/securescore',
+      },
+      {
+        component: CNavItem,
         name: 'App Consent Requests',
         to: '/tenant/administration/app-consent-requests',
       },
@@ -161,6 +166,11 @@ const _nav = [
         component: CNavItem,
         name: 'Tenant Offboarding',
         to: '/tenant/administration/tenant-offboarding-wizard',
+      },
+      {
+        component: CNavItem,
+        name: 'Partner Relationships',
+        to: '/tenant/administration/partner-relationships',
       },
     ],
   },
@@ -607,6 +617,11 @@ const _nav = [
         component: CNavItem,
         name: 'Quarantine',
         to: '/email/administration/quarantine',
+      },
+      {
+        component: CNavItem,
+        name: 'Tenant Allow/Block Lists',
+        to: '/email/administration/tenant-allow-block-lists',
       },
     ],
   },
