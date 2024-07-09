@@ -3,9 +3,6 @@ rules:
   - base: main
     upstream: KelvinTegelaar:main
     mergeMethod: merge
-  - base: dev
-    upstream: KelvinTegelaar:dev
-    mergeMethod: merge
   - base: website
     upstream: KelvinTegelaar:website
     mergeMethod: merge
